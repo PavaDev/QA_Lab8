@@ -8,7 +8,7 @@ import sqa.main.CookingConversionCalculator;
 
 //นายปวริศ กุลแก้ว 663380019-2 sec.1
 
-class TestBottomDown {
+class TestTopDown {
 	
 	@Test
 	void cooking_liquid() {
@@ -49,14 +49,14 @@ class TestBottomDown {
 	void mass_convert() {
 		MassConverterStub stub = new MassConverterStub();
 		double expectedResult = 3.5;
-		assertEquals(expectedResult, stub.convert(100, "g", "oz"));
+		assertEquals(expectedResult, stub.convert(100, "gram", "oz"));
 	}
 	
 	@Test
 	void mass_conversion() {
 		MassConverterStub stub = new MassConverterStub();
 		double expectedResult = 0.035;
-		assertEquals(expectedResult, stub.getConversionFactor("g", "oz"));
+		assertEquals(expectedResult, stub.getConversionFactor("gram", "oz"));
 	}
 	
 	@Test

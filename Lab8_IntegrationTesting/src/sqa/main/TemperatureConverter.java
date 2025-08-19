@@ -28,15 +28,15 @@ public class TemperatureConverter {
 	
 	public double convert(double tempValue, String fromUnit, String toUnit) {
 		double result = 0.0;
-		
 		if (fromUnit.equals("fahrenheit")) {
 			if (toUnit.equals("celsius")) {
-				result = (tempValue - 32)*(5/9);
+				result = (tempValue - 32)*(5/9); //ผิดตรงนี้นี่เองงงง
+				System.out.println(result);
 			} 
 		}
 		else if (fromUnit.equals("celsiusfahrenheit")) {
 			if (toUnit.equals("fahrenheit")) {
-				result = (tempValue*(9/5)) + 32;
+				result = (tempValue*(9/5)) + 32; //ผิดตรงนี้นี่เองงงง
 			} 
 		}
 		
